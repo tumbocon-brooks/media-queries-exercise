@@ -86,13 +86,14 @@
             padding: 0;
             margin: 0;
             border: 0;
-            width: 50%;
         }
         section#main.main {
             align-self: start;
+            width: 50%;
         }
         section.sub-section{
-            align-self: flex-end;
+            float: right;
+            width: 30%;
         }
 }
 
