@@ -3,12 +3,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 3px;
 }
     .alert-info {
-        padding: 10px;
-        margin: auto 0;
+        /*padding: 10px;*/
+        margin: auto;
         background-color: aquamarine;
-        border: 5px lightgray;
+        border: 5px solid lightgray;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -17,7 +18,7 @@
         width: 100%;
     }
     .nav-links {
-        padding: 10px;
+        /*padding: 10px;*/
         margin: auto;
         border: 5px black;
         width: 100%;
@@ -29,12 +30,12 @@
         align-items: center;
         list-style: none;
         margin: 0;
-        padding: 0;
+        /*padding: 0;*/
         height: 100%
     }
     nav ul li{
         margin: 5px 0;
-        padding: 3px;
+        /*padding: 3px;*/
         background-color: lightgray;
         width: 100%;
     }
@@ -50,6 +51,50 @@
     footer{
         align-self: flex-start;
     }
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width:992px) {
+
+        .alert-info{
+            display: none;
+        }
+        h1 {
+            align-self: start;
+        }
+        nav{
+            float: right;
+        }
+        .nav-links {
+            padding: 0;
+            margin: 0;
+            width: auto;
+            align-self: flex-end;
+            flex-direction: row;
+        }
+        nav ul li{
+            background-color: white;
+            justify-content: flex-end;
+        }
+        section {
+            padding: 0;
+            margin: 0;
+            border: 0;
+            width: 50%;
+        }
+        section#main.main {
+            align-self: start;
+        }
+        section.sub-section{
+            align-self: flex-end;
+        }
+}
 
 
 
